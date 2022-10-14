@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GifService } from 'src/app/gifs/services/gif.service';
 
 @Component({
   selector: 'app-slidebar',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./slidebar.component.css']
 })
 export class SlidebarComponent {
+
+  constructor(private gifsService:GifService){
+    
+  }
+
+  get historial(){
+    return this.gifsService.historial;
+  }
   
 }
