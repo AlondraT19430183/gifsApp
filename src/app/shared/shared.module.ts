@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SlidebarComponent } from './slidebar/slidebar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
 @NgModule({
   declarations: [
-    SlidebarComponent
+    SidebarComponent
+  ],
+  exports:[
+    SidebarComponent
   ],
   imports: [
     CommonModule
-  ],
-
-  exports:[
-    SlidebarComponent 
   ]
 })
 export class SharedModule { }

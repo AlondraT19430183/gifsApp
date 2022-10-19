@@ -1,0 +1,16 @@
+
+Tarea
+
+1- Crear modulo - shared.module.ts
+    ng g m shared
+
+2- crera componente
+    sidebar.component.ts
+    ng g c shared/sidebar --skip-tests
+
+3-  exportar el sidebar(modulo)
+
+4- Importar el shared.module.ts
+
+5- <app-sidebar></app-sidebar>
+    en el app.component.html
